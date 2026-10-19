@@ -6,13 +6,15 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 13:21:47 by amanet            #+#    #+#             */
-/*   Updated: 2026/10/19 13:38:21 by amanet           ###   ########.fr       */
+/*   Updated: 2026/10/19 13:56:34 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-/*
-void	ft_putchar(char c)
+
+void	ft_putchar(char c);
+
+/*void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
