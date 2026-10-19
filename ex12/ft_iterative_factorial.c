@@ -6,7 +6,7 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 15:17:51 by amanet            #+#    #+#             */
-/*   Updated: 2026/10/19 15:36:46 by amanet           ###   ########.fr       */
+/*   Updated: 2026/10/19 15:46:53 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_iterative_factorial(int nb)
 	int	res;
 	int	i;
 
-	if (nb <= 0)
+	if (nb <= 0 || nb > 12)
 		return (0);
 	res = nb;
 	i = 1;
@@ -33,7 +33,7 @@ int main()
 {
 	int a;
 
-	a = ft_iterative_factorial(3);
+	a = ft_iterative_factorial(13);
 	printf("%d", a);
 	return (0);
 }*/
