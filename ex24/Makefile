@@ -6,7 +6,7 @@
 #    By: amanet <amanet@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/20 14:29:01 by amanet            #+#    #+#              #
-#    Updated: 2026/10/20 15:29:27 by amanet           ###   ########.fr        #
+#    Updated: 2026/10/20 15:31:24 by amanet           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ SRC_FILE = ft_putchar.c \
 
 SOURCES = $(addprefix $(DIR)/, $(SRC_FILE))
 
-OBJECTS = $(DIR)/$(SOURCES:.c=.o)
+OBJECTS = $(SOURCES:.c=.o)
 
 TARGET = libft.a
 
