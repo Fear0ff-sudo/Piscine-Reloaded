@@ -6,7 +6,7 @@
 #    By: amanet <amanet@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/20 14:29:01 by amanet            #+#    #+#              #
-#    Updated: 2026/10/20 15:31:24 by amanet           ###   ########.fr        #
+#    Updated: 2026/10/20 15:36:23 by amanet           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ DIR = srcs
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
-	ar rcs $(OBJECTS) -o $(TARGET)
+	ar rcs $(TARGET) $(OBJECTS)
 
 $(DIR)/%.o: $(DIR)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
