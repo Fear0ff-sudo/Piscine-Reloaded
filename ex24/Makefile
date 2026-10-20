@@ -6,7 +6,7 @@
 #    By: amanet <amanet@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/20 14:29:01 by amanet            #+#    #+#              #
-#    Updated: 2026/10/20 15:06:20 by amanet           ###   ########.fr        #
+#    Updated: 2026/10/20 15:15:29 by amanet           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,9 @@ all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) $(OBJECTS) -o $(TARGET)
+
+$(DIR)/%.o: $(DIR)/%.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS)
