@@ -6,7 +6,7 @@
 /*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 15:54:53 by amanet            #+#    #+#             */
-/*   Updated: 2026/10/20 15:57:58 by amanet           ###   ########.fr       */
+/*   Updated: 2026/10/20 15:59:59 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_count_if(char **tab, int (*f)(char*))
 	count = 0;
 	while (tab[i])
 	{
-		if (f(tab[i]) == 1);
+		if (f(tab[i]) == 1)
 			count++;
 		i++;
 	}
